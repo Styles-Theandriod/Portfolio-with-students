@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+:root{
+    --bgColor: #131517;
+}
+
+.navigation{
+    background-color: var(--bgColor);
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    padding: 25px;
+}
+
+.navlists{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 25px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navlists li{
+    list-style: none;
+}
+
+.logo{
+    color: blanchedalmond;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.navlists a{
+    color: blanchedalmond;
+    text-transform:capitalize;
+}
+
+.btn{
+    background-color: transparent;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: 2px solid blanchedalmond;
+}
+
+.btn a{
+    color: blanchedalmond;
+    font-weight: 900;
+}
+
+.container{
+    background-color:var(--bgColor);
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    padding:20px;
+}
+
+.box1{
+    padding-right: 30px;
+}
+
+
+.change::before{
+    font-size: 60px;
+    font-weight: 900;
+    animation:changeText 9s ease-in-out infinite;
+    content: '';
+    color: blanchedalmond;
+}
+
+
+@keyframes changeText{
+    0%{
+        content: 'FullStack Dev';
+    }
+    20%{
+        content: 'Technical Writer';
+    }
+    40%{
+        content: 'Game Designer';
+    }
+    80%{
+        content: 'Graphics Designer';
+    }
+}
+
+
+
+
+@media screen and (max-width: 732px) {
+   .navlists{
+    display: none;      
+   } 
+}
