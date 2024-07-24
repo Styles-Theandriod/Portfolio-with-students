@@ -6,11 +6,11 @@
 
 
 :root{
-    --bgColor: #131517;
+    ---bgColor: #131517;
 }
 
 .navigation{
-    background-color: var(--bgColor);
+    background-color: var(---bgColor);
     display: flex;
     justify-content: space-around;
     align-items:center;
